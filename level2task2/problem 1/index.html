@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevJobs Internship Program</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">DEVJOBS</div>
+            <ul class="desktop-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#internship">Internship Details</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</div>
+        </nav>
+        <div class="auth">
+            <a href="#login">Login</a>
+            <a href="#register" class="register-btn">Register</a>
+        </div>
+        <ul class="mobile-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#internship">Internship Details</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#register" class="register-btn">Register</a></li>
+        </ul>
+    </header>
+
+    <section class="hero">
+        <h1>Join Our Web Developer Internship Program</h1>
+        <a href="#apply" class="btn-primary">Apply Now</a>
+        <a href="#learn-more" class="btn-secondary">Learn More</a>
+    </section>
+
+    <section class="features">
+        <h2>Unlock Your Potential with Our Web Developer Internship</h2>
+        <div class="feature-cards">
+            <div class="card">
+                <h3>Feature 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non volutpat turpis.</p>
+            </div>
+            <div class="card">
+                <h3>Feature 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non volutpat turpis.</p>
+            </div>
+            <div class="card">
+                <h3>Feature 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non volutpat turpis.</p>
+            </div>
+            <div class="card">
+                <h3>Feature 4</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non volutpat turpis.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <h2>Choose the Right Plan for You</h2>
+        <div class="pricing-cards">
+            <div class="card">
+                <h3>FREE</h3>
+                <p class="price">$0/month</p>
+                <p>Perfect for beginners looking to get started.</p>
+                <ul>
+                    <li>Access to basic web development tools</li>
+                    <li>1GB storage space</li>
+                    <li>Community support</li>
+                    <li>Limited customization options</li>
+                </ul>
+                <a href="#free" class="btn-primary">Continue with Free Plan</a>
+            </div>
+            <div class="card">
+                <h3>BASIC</h3>
+                <p class="price">$29/month</p>
+                <p>Ideal for small projects and personal websites.</p>
+                <ul>
+                    <li>All features of FREE plan</li>
+                    <li>10GB storage space</li>
+                    <li>Priority email support</li>
+                    <li>Basic customization options</li>
+                </ul>
+                <a href="#basic" class="btn-primary">Try the Basic Plan</a>
+            </div>
+            <div class="card">
+                <h3>PRO</h3>
+                <p class="price">$59/month</p>
+                <p>Great for businesses and advanced developers.</p>
+                <ul>
+                    <li>All features of BASIC plan</li>
+                    <li>Unlimited storage space</li>
+                    <li>Priority email and phone support</li>
+                    <li>Advanced customization options</li>
+                </ul>
+                <a href="#pro" class="btn-primary">Try the Pro Plan</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <h2>Common Questions</h2>
+        <div class="faq-item">
+            <h3>What is web development?</h3>
+            <p>Web development refers to the building, creating, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management.</p>
+        </div>
+        <div class="faq-item">
+            <h3>What are the main programming languages used in web development?</h3>
+            <p>The main programming languages used in web development include HTML, CSS, JavaScript, and PHP. Others include Python, Ruby, and Java for backend development.</p>
+        </div>
+        <div class="faq-item">
+            <h3>What is the difference between front-end and back-end development?</h3>
+            <p>Front-end development deals with the visual and interactive aspects of a website that users interact with, using languages like HTML, CSS, and JavaScript. Back-end development involves server-side operations, databases, and application logic, using languages like PHP, Python, and Ruby.</p>
+        </div>
+        <div class="faq-item">
+            <h3>What is responsive web design?</h3>
+            <p>Responsive web design is an approach that ensures websites work well on a variety of devices and screen sizes, including desktops, tablets, and smartphones. This is typically achieved through flexible grids, layouts, and CSS media queries.</p>
+        </div>
+        <div class="faq-item">
+            <h3>What is a Content Management System (CMS)?</h3>
+            <p>A Content Management System (CMS) is software that allows users to create, manage, and modify content on a website without needing specialized technical knowledge. Popular CMS platforms include WordPress, Joomla, and Drupal.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Why is website performance important?</h3>
+            <p>Website performance is crucial because it affects user experience, search engine rankings, and conversion rates. Fast-loading websites provide a better user experience and are more likely to retain visitors.</p>
+        </div>
+        <div class="faq-item">
+            <h3>What is SEO and why is it important for websites?</h3>
+            <p>SEO (Search Engine Optimization) is the practice of optimizing a website to rank higher in search engine results pages. It is important because higher rankings lead to increased visibility, more traffic, and potentially higher revenue for businesses.</p>
+        </div>
+        <div class="faq-item">
+            <h3>What are some popular web development frameworks?</h3>
+            <p>Some popular web development frameworks include React, Angular, and Vue.js for front-end development, and Node.js, Django, and Ruby on Rails for back-end development.</p>
+        </div>
+        <div class="faq-item">
+            <h3>What is the role of web hosting in web development?</h3>
+            <p>Web hosting provides the necessary infrastructure for a website to be accessible on the internet. It involves storing website files on a server and making them available to users through a web browser.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How can I improve website security?</h3>
+            <p>Improving website security involves using HTTPS, keeping software and plugins up to date, using strong passwords, implementing firewalls, and regularly backing up website data. Additionally, security measures like two-factor authentication and malware scanning can be employed.</p>
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>© 2024 DevJobs. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

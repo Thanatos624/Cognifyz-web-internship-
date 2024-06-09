@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery">
+        <div class="thumbnail">
+            <img src="thumbnail1.jpeg" alt="Thumbnail 1" onclick="enlargeImage('fullsize1.jpg')">
+        </div>
+        <div class="thumbnail">
+            <img src="thumbnail2.jpeg" alt="Thumbnail 2" onclick="enlargeImage('fullsize2.jpg')">
+        </div>
+        <div class="thumbnail">
+            <img src="thumbnail3.jpeg" alt="Thumbnail 3" onclick="enlargeImage('fullsize3.jpg')">
+        </div>
+        <!-- Add more thumbnails as needed -->
+    </div>
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <img id="enlargedImage" src="" alt="Enlarged Image">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

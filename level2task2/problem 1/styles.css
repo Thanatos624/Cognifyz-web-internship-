@@ -1,0 +1,255 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header and navigation styling */
+header {
+    background-color: #ff4b2b;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.auth {
+    display: none;
+}
+
+.auth .register-btn {
+    background-color: #fff;
+    color: #ff4b2b;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.mobile-menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.mobile-menu.show {
+    display: flex;
+}
+
+/* Hero section styling */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #f0f8ff;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero .btn-primary, .hero .btn-secondary {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    margin: 1rem 0.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .btn-primary {
+    background-color: #ff4b2b;
+    color: #fff;
+}
+
+.hero .btn-secondary {
+    background-color: #fff;
+    color: #ff4b2b;
+    border: 1px solid #ff4b2b;
+}
+
+/* Features section styling */
+.features {
+    text-align: center;
+    padding: 2rem;
+}
+
+.features h2 {
+    font-size: 2rem;
+}
+
+.features .feature-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.features .card {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+    margin: 1rem;
+}
+
+/* Pricing section styling */
+.pricing {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f0f8ff;
+}
+
+.pricing h2 {
+    font-size: 2rem;
+}
+
+.pricing .pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.pricing .card {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+    margin: 1rem;
+}
+
+.pricing .card .price {
+    font-size: 1.5rem;
+    color: #ff4b2b;
+}
+
+.pricing .card ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.pricing .card ul li {
+    padding: 0.5rem 0;
+}
+
+/* FAQ section styling */
+.faq {
+    padding: 2rem;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.faq .faq-item {
+    margin: 1rem 0;
+}
+
+.faq .faq-item h3 {
+    font-size: 1.2rem;
+    color: #ff4b2b;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    nav ul.desktop-menu {
+        display: none;
+    }
+
+    nav ul.mobile-menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    .auth {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero .btn-primary, .hero .btn-secondary {
+        display: block;
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+    .features .feature-cards,
+    .pricing .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .features .card,
+    .pricing .card {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero .btn-primary, .hero .btn-secondary {
+        width: 100%;
+        margin: 1rem 0;
+    }
+}
